@@ -1,8 +1,6 @@
-
-
-baseURL = "https://example.com"
+baseURL = "https://bbacontracting.com.au"
 title = "BBA Contracting"
-author = "username"
+author = "markhepburn"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
