@@ -1246,6 +1246,14 @@ video {
   margin-top: auto;
 }
 
+.ms-8 {
+  margin-inline-start: 2rem;
+}
+
+.ms-4 {
+  margin-inline-start: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -1410,6 +1418,18 @@ video {
   resize: both;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-outside {
+  list-style-position: outside;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -1502,6 +1522,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0px * var(--tw-space-x-reverse));
   margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
