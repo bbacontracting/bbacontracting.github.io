@@ -27,7 +27,8 @@ enableRobotsTXT = true
   googleFonts = true
 
   [params.logo]
-    main = "img/logo/bbacontracting.png"
+    # main = "img/logo/bbacontracting.png"
+    main = "img/logo/logo-stacked.png"
     alt = "BBA Logo"
 
     # The size parameter is the class name of tailwindcss
