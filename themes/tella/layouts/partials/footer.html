@@ -32,6 +32,22 @@
     }
     toggleNav();
 
+   document.querySelectorAll('#overlay a').forEach((link) => {
+     link.addEventListener('click', function (e) {
+       var hamburger = document.getElementById("hamburgerbtn");
+       var overlay = document.getElementById("overlay");
+       var body = document.body;
+       console.log({overlay, hamburger});
+       overlay.classList.remove("open");
+       hamburger.classList.remove("is-open");
+       body.classList.remove("scroll-lock");
+
+       const anchor = link.getAttribute('href');
+       const section = document.querySelector(anchor);
+       section.scrollIntoView({behavior: "smooth"});
+     });
+   });
+
     document.querySelector('.scroll-top').addEventListener('click', () => {
       document.documentElement.scrollTop = 0;
     });
